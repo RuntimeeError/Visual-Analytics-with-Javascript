@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+
+    <body>
+        <div class="container pt-4">
+            <h2 class="body1">Your Workplace Engagement</h2>
+            <div class="row justify-content-between">
+                <div class="tab1 m-3 ml-4 d-flex">
+                    <div class="col-8 body1">
+                        <h3 class="tab1-head">"Great things in business are never done by one person.</h3>
+                        <label class="tab1-head steveJbs">They're done by a team of people" - Steve Jobs</label>
+                    </div>
+                    <div class="col-4">
+                        <img class="top-logo" src="./images/topLogo.png">
+                    </div>
+                </div>
+                <div class="tab2 m-3 mr-4 p-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="t-h f-s l-c">SUMMARY</div>
+                        <div class="t-h f-s l-c px-2">
+                            <span class="menuDots"></span>
+                            <span class="menuDots"></span>
+                            <span class="menuDots"></span>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="sumCol">
+                            <div class="t-h sum body1">174</div>
+                            <h6 class="f-s dark-head"><strong>Total employees</strong></h6>
+                        </div>
+                        <div class="sumCol">
+                            <div class="t-h sum body1">325</div>
+                            <h6 class="f-s dark-head"><strong>Client projects</strong></h6>
+                        </div>
+                        <div class="sumCol1">
+                            <div class="t-h sum body1">525</div>
+                            <h6 class="f-s dark-head"><strong>Rate Cards Generated</strong></h6>
+                        </div>
+                        <div class="sumCol2">
+                            <div class="t-h sum body1">SGD2,5m</div>
+                            <h6 class="f-s dark-head"><strong>Total revenue gained</strong></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tab3 ml-4">
+                    <div class="col-12 pt-4 pl-5 pb-2 d-flex justify-content-between">
+                        <div class="t-h f-s l-c">PLATFORM BEHAVIOUR</div>
+                        <div class="t-h f-s l-c px-2">
+                            <span class="menuDots"></span>
+                            <span class="menuDots"></span>
+                            <span class="menuDots"></span>
+                        </div>
+                    </div>
+                    <div id="FirstRow"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="tab4 ml-4 d-block mt-3">
+                    <div class="d-flex">
+                        <div class="pt-4 pl-4">
+                            <div class="l-c f-s t-h pb-3">ANALYSE WORKPLACE ACTIVITIES WITH YOUR COMMERCIAL
+                                ACTIVITIES</div>
+                            <form class="d-flex">
+                                <div class="form-group">
+                                    <select class="graph-inpt form-control" id="list">
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="graph-inpt1 form-control" id="list2">
+                                    </select>
+                                </div>
+                            </form>
+                            <div class="d-flex slack-head body1">
+                                <h3><strong> Here’s how the</strong></h3>&nbsp;
+                                <h3 id="slack_dropdown"><strong>Use of Slack emojis</strong></h3>&nbsp;
+                                <h3><strong>impact your </strong></h3>&nbsp;
+                                <h3 id="commercial_activites"><strong>[insert comparison]</strong></h3>
+                            </div>
+                            <div class="form-group">
+                                <div id="containerYo" style="width: 68rem; height: 35rem; margin: 3rem auto"></div>
+                            </div>
+                        </div>
+                        <div class="tab41 p-2">
+                            <div class="col-12">
+                                <div class="t-h f-s l-c mb-4 text-right">
+                                    <span class="menuDots"></span>
+                                    <span class="menuDots"></span>
+                                    <span class="menuDots"></span>
+                                </div>
+                                <div class="presetDesc mb-4">Select a workplace activity to compare with your
+                                    commercial activities. If you’re not sure what to
+                                    compare, try the list below!</div>
+                                <h5 class="mb-3 font-weight-bold">Comparison presets</h5>
+                                <div class="presets mb-4" id="presets"></div>
+                                <div class="filters">
+                                    <h5 class="mb-3 font-weight-bold">Advanced Filter</h5>
+                                    <div class="d-flex form-group mb-3 justify-content-between">
+                                        <div>
+                                            <label for="birthday">Start Date</label>
+                                            <input class="form-control ad-filters sbys-filter" placeholder="DD/MM/YY"
+                                                type="date" id="startDate" name="startDate">
+                                        </div>
+                                        <div>
+                                            <label for="birthday">End Date</label>
+                                            <input class="form-control ad-filters sbys-filter" placeholder="DD/MM/YY"
+                                                type="date" id="endDate" name="endDate">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="birthday">Department</label>
+                                        <select class="ad-filters form-control" id="department">
+                                        </select>
+                                    </div>
+                                    <form class="d-flex mb-3 justify-content-between">
+                                        <div class="form-group">
+                                            <label for="birthday">Market</label>
+                                            <select class="ad-filters form-control sbys-filter" id="market">
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="birthday">Country</label>
+                                            <select class="ad-filters form-control sbys-filter" id="country">
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="pt-4 mx-4">
+                            <h5 class="py-4">Your workplace activities related to the above</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="activity-container">
+                                    <h5 class="tab411">Top Slack Emojis</h5>
+                                    <div id="slack-Emojies"></div>
+                                </div>
+                                <div class="activity-container">
+                                    <h5 class="tab411">Top emoji contributers</h5>
+                                    <div id="emojies-activites"></div>
+                                </div>
+                                <div class="activity-container">
+                                    <h5 class="tab411">Market that uses most emojis</h5>
+                                    <div id="most-emojies"></div>
+                                </div>
+                                <div class="activity-container">
+                                    <h5 class="tab411">Channels with the most emojis</h5>
+                                    <div id="channel-emojies"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="py-4 mx-4">
+                            <h5 class="py-3">What can I do with these datas?</h5>
+                            <div class="d-flex justify-content-between">
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group2.PNG">
+                                    <div class="div-text pt-3 pl-3">Save & name these datasets</div>
+                                </div>
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group1.PNG">
+                                    <div class="div-text pt-3 pl-3">Add datasets to my dashboard</div>
+                                </div>
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group3.PNG">
+                                    <div class="div-text pt-3 pl-3">Export, download or print datasets</div>
+                                </div>
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group4.PNG">
+                                    <div class="div-text pt-3 pl-3">Clear all datasets</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="tab4 ml-4 d-block mt-3">
+                    <div class="d-flex">
+                        <div class="pt-4 pl-4">
+                            <div class="netwrk-analysis">
+                                <h6>NETWORK ANALYSE</h6>
+                                <div class="body1" id="netwrkGraph"></div>
+                                <div id="networkcontainer"></div>
+                            </div>
+                        </div>
+                        <div class="tab41 p-2">
+                            <div class="col-12">
+                                <div class="t-h f-s l-c mb-4 text-right">
+                                    <span class="menuDots"></span>
+                                    <span class="menuDots"></span>
+                                    <span class="menuDots"></span>
+                                </div>
+                                <div class="div-text mb-4">Select a variable to analyse your network activity</div>
+                                <h5 class="mb-3">Show me:</h5>
+                                <div class="mb-4">
+                                    <div class="my-2 div-text d-flex justify-content-between">
+                                        <button id="b1" class="show-filters">Influencers</button>
+                                        <button id="b2" class="show-filters">Connectors</button>
+                                    </div>
+                                    <div class="my-2 div-text d-flex justify-content-between">
+                                        <button class="show-filters">Outliers</button>
+                                        <button class="show-filters">Individual teams</button>
+                                    </div>
+                                    <div class="my-2 div-text d-flex justify-content-between">
+                                        <button class="show-filters">Most profitable</button>
+                                        <button class="show-filters">Least profitable</button>
+                                    </div>
+                                    <div class="my-2 div-text d-flex justify-content-between">
+                                        <button class="show-filters">Most hours</button>
+                                        <button class="show-filters">Least hours</button>
+                                    </div>
+                                </div>
+
+                                <div class="filters">
+                                    <h5 class="mb-3 font-weight-bold">Advanced Filter</h5>
+                                    <div class="d-flex form-group mb-3 justify-content-between">
+                                        <div>
+                                            <label for="birthday">Start Date</label>
+                                            <input class="form-control ad-filters sbys-filter" placeholder="DD/MM/YY"
+                                                type="date" id="startDate" name="startDate">
+                                        </div>
+                                        <div>
+                                            <label for="birthday">End Date</label>
+                                            <input class="form-control ad-filters sbys-filter" placeholder="DD/MM/YY"
+                                                type="date" id="endDate" name="endDate">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="birthday">Department</label>
+                                        <select class="ad-filters form-control" id="department1">
+                                        </select>
+                                    </div>
+                                    <form class="d-flex mb-3 justify-content-between">
+                                        <div class="form-group">
+                                            <label for="birthday">Market</label>
+                                            <select class="ad-filters form-control sbys-filter" id="market1">
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="birthday">Country</label>
+                                            <select class="ad-filters form-control sbys-filter" id="country1">
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="py-4 pl-4">
+                            <h5 class="py-4">What can I do with these datas?</h5>
+                            <div class="pr-4 d-flex justify-content-between">
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group2.PNG">
+                                    <div class="div-text pt-3 pl-3">Save & name these datasets</div>
+                                </div>
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group1.PNG">
+                                    <div class="div-text pt-3 pl-3">Add datasets to my dashboard</div>
+                                </div>
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group3.PNG">
+                                    <div class="div-text pt-3 pl-3">Export, download or print datasets</div>
+                                </div>
+                                <div class="date-container d-flex p-2">
+                                    <img class="pl-2 pt-1 dataSign" src="./images/Group4.PNG">
+                                    <div class="div-text pt-3 pl-3">Clear all datasets</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="tab4 ml-4 d-block mt-3">
+                    <div class="pt-4 px-4 pb-3">
+                        <div class="mx-2 d-flex justify-content-between">
+                            <h6 class="t-h f-s l-c body1">WORKPLACE PATTERNS</h6>
+                            <div class="t-h f-s l-c px-2">
+                                <span class="menuDots"></span>
+                                <span class="menuDots"></span>
+                                <span class="menuDots"></span>
+                            </div>
+                        </div>
+                        <div class="d-flex body1">
+                            <div class="m-2 cal-div d-block">
+                                <h3 class="colHead">Email overload often takes place at
+                                    <span class="email"> 7pm</span> every
+                                    <span class="email"> Wednesday, Friday, Saturday and Sunday.</span>
+                                </h3>
+                                <!-- <table id="table1" style="width:50%">
+                                </table> -->
+                                <table style="width: 26rem">
+                                    <tr id="tHead"></tr>
+                                    <tr id="trM"></tr>
+                                    <tr id="trT"></tr>
+                                    <tr id="trW"></tr>
+                                    <tr id="trThurs"></tr>
+                                    <tr id="trF"></tr>
+                                    <tr id="trS"></tr>
+                                    <tr id="trSun"></tr>
+                                </table>
+                            </div>
+                            <div class="m-2 cal-div d-block">
+                                <h3 class="colHead">Prime time for Slack chats peaked on <span class="slack">Monday &
+                                        Friday morning.</span>
+                                </h3>
+                                <table style="width: 26rem">
+                                    <tr id="tHead1"></tr>
+                                    <tr id="trM1"></tr>
+                                    <tr id="trT1"></tr>
+                                    <tr id="trW1"></tr>
+                                    <tr id="trThurs1"></tr>
+                                    <tr id="trF1"></tr>
+                                    <tr id="trS1"></tr>
+                                    <tr id="trSun1"></tr>
+                                </table>
+                            </div>
+                            <div class="m-2 cal-div d-block">
+                                <h3 class="colHead">Majority of meetings happen on <span class="meeting"> Wednesday,
+                                        Thursday, Friday </span>
+                                    at <span class="meeting"> 3pm-5pm. </span>
+                                </h3>
+                                <table style="width:50%">
+                                    <tr id="tHead2"></tr>
+                                    <tr id="trM2"></tr>
+                                    <tr id="trT2"></tr>
+                                    <tr id="trW2"></tr>
+                                    <tr id="trThurs2"></tr>
+                                    <tr id="trF2"></tr>
+                                    <tr id="trS2"></tr>
+                                    <tr id="trSun2"></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="tab4 ml-4 d-block mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./lineChart.js"></script>
+    <script src="./sigmaParser.js"></script>
+
+</html>
